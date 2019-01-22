@@ -104,7 +104,7 @@ module.exports = {
         // (does not apply to resolving to loaders)
         modules: [
           "node_modules",
-          path.resolve(__dirname, "app")
+          path.resolve(__dirname, "src")
         ],
         // directories where to look for modules
         extensions: [".js", ".json", ".jsx", ".css"],
@@ -124,7 +124,11 @@ module.exports = {
     },
     devtool: "source-map",
     devServer: {
-        historyApiFallback: true
+        historyApiFallback: true,
+        contentBase: [path.join(__dirname, 'assets'), path.join(__dirname, 'bundle')],
+        watchContentBase: true,
+        compress: true,
+        port: 9000
     },
     plugins: [
         new HtmlWebpackPlugin({ template: './src/index.html' }),

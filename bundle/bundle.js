@@ -100,6 +100,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var Home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Home */ "./src/Home/index.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -117,6 +118,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -140,9 +142,7 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "/",
         exact: true,
-        component: function component() {
-          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Hello");
-        }
+        component: Home__WEBPACK_IMPORTED_MODULE_3__["default"]
       }))));
     }
   }]);
@@ -27958,6 +27958,146 @@ try {
 
 module.exports = g;
 
+
+/***/ }),
+
+/***/ "./src/Home/fragmentShader.js":
+/*!************************************!*\
+  !*** ./src/Home/fragmentShader.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n#ifdef GL_ES\n        precision mediump float;\n    #endif\n\n    varying vec2 vUV;\n\n    uniform sampler2D textureSampler;\n\n    void main(void) {\n        gl_FragColor = texture2D(textureSampler, vUV);\n    }\n");
+
+/***/ }),
+
+/***/ "./src/Home/index.js":
+/*!***************************!*\
+  !*** ./src/Home/index.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Home; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _vertexShader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./vertexShader */ "./src/Home/vertexShader.js");
+/* harmony import */ var _fragmentShader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fragmentShader */ "./src/Home/fragmentShader.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+var Home =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Home, _React$Component);
+
+  function Home() {
+    _classCallCheck(this, Home);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Home).apply(this, arguments));
+  }
+
+  _createClass(Home, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var canvas = document.getElementById("renderCanvas"); // Get the canvas element 
+
+      var engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
+
+      /******* Add the create scene function ******/
+
+      var createScene = function createScene() {
+        // Create the scene space
+        var scene = new BABYLON.Scene(engine); // Add a camera to the scene and attach it to the canvas
+
+        var camera = new BABYLON.ArcRotateCamera("Camera", Math.PI / 2, Math.PI / 2, 2, new BABYLON.Vector3(0, 0, 5), scene);
+        camera.attachControl(canvas, true); // Add lights to the scene
+
+        var light1 = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(1, 1, 0), scene);
+        var light2 = new BABYLON.PointLight("light2", new BABYLON.Vector3(0, 1, -1), scene); // Add and manipulate meshes in the scene
+
+        var sphere = BABYLON.MeshBuilder.CreateSphere("sphere", {
+          diameter: 2
+        }, scene);
+        BABYLON.Effects.ShadersStore["customVertexShader"] = _vertexShader__WEBPACK_IMPORTED_MODULE_1__["default"];
+        BABYLON.Effects.ShadersStore["customVertexShader"] = _fragmentShader__WEBPACK_IMPORTED_MODULE_2__["default"];
+        var shaderMaterial = new BABYLON.ShaderMaterial("shader", scene, {
+          vertexElement: "custom",
+          fragmentElement: "custom"
+        }, {
+          attributes: ["position", "normal", "uv"],
+          uniforms: ["world", "worldView", "worldViewProjection", "view", "projection"]
+        });
+        sphere.material = shaderMaterial;
+        return scene;
+      };
+      /******* End of the create scene function ******/
+
+
+      var scene = createScene(); //Call the createScene function
+      // Register a render loop to repeatedly render the scene
+
+      engine.runRenderLoop(function () {
+        scene.render();
+      }); // Watch for browser/canvas resize events
+
+      window.addEventListener("resize", function () {
+        engine.resize();
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("canvas", {
+        id: "renderCanvas",
+        width: window.innerWidth,
+        height: window.innerHeight,
+        "touch-action": "none"
+      });
+    }
+  }]);
+
+  return Home;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+
+
+/***/ }),
+
+/***/ "./src/Home/vertexShader.js":
+/*!**********************************!*\
+  !*** ./src/Home/vertexShader.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n#ifdef GL_ES\nprecision highp float;\n#endif\n\n// Attributes\nattribute vec3 position;\nattribute vec2 uv;\n\n// Uniforms\nuniform mat4 worldViewProjection;\n\n// Normal\nvarying vec2 vUV;\n\nvoid main(void) {\ngl_Position = worldViewProjection * vec4(position, 1.0);\n\nvUV = uv;\n}\n");
 
 /***/ })
 
