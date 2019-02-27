@@ -21,10 +21,14 @@ export default `
     void main(void) {
         float delay = 20.0;
         float radius = 0.0;
+        float fullRadius = 12.0;
         float uTime = time;
-        if(uTime>delay){
+        if(uTime>delay && uTime < 25.0){
             uTime = uTime - delay;
-            radius = 8.0*sin(uTime*0.03);
+            radius = fullRadius*sin(uTime*0.5);
+        }
+        if(uTime >= 21.0){
+            radius = fullRadius;
         }
         float x2 = ((center.x - vPosition.x)*(center.x - vPosition.x)) / (radius*radius);
         float y2 = ((center.y - vPosition.y)*(center.y - vPosition.y)) / (radius*radius);
@@ -52,7 +56,9 @@ export default `
             vec3 specular = uKs * s * color;
             gl_FragColor = vec4(ambient+diffuse+specular+objectColor, 1.0);
         } else {
-            gl_FragColor = vec4(objectColor, 1.0);
+            uKa = 0.3;
+            vec3 ambient = uKa * color;
+            gl_FragColor = vec4(ambient+objectColor, 1.0);
         }   
     }
 `

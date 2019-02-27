@@ -11,7 +11,7 @@ attribute vec2 uv;
 // Uniforms
 uniform mat4 worldViewProjection;
 uniform mat4 worldView;
-uniform float time;
+//uniform float time;
 
 // Normal
 varying vec2 vUV;
@@ -20,7 +20,7 @@ varying vec3 vNormal;
 varying vec3 vL;
 varying vec3 vE;
 
-vec3 lightPosition = vec3(0.0, 0.0, 0.0);
+vec3 lightPosition = vec3(0.0, 0.0, 10.0);
 
 void main(void) {
     gl_Position = worldViewProjection * vec4(position, 1.0);

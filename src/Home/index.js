@@ -24,8 +24,13 @@ export default class Home extends React.Component {
             scene.clearColor = new BABYLON.Color3(0.220, 0.68, 0.5);
 
             // Add and manipulate meshes in the scene
-            //var sphere = BABYLON.MeshBuilder.CreateSphere("sphere", {diameter:2}, scene);
+            var sphere = BABYLON.MeshBuilder.CreateSphere("sphere", {diameter:1}, scene);
+            sphere.translate(new BABYLON.Vector3(-2, -1, 0).normalize(), 2, BABYLON.Space.LOCAL)
 
+            var sphere1 = BABYLON.MeshBuilder.CreateSphere("sphere", {diameter:2}, scene);
+            sphere1.translate(new BABYLON.Vector3(2, 2, 0).normalize(), 3, BABYLON.Space.LOCAL)
+
+            
             let t0 = 0;
 
 
