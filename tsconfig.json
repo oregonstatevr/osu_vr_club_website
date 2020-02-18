@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "es5",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": ".",
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "node_modules/*",
+            ],
+        }
+    },
+    "include": [
+        "index.ts"
+    ],
+    "compileOnSave": true,
+    "exclude":[
+        "node_modules"
+    ]
+}

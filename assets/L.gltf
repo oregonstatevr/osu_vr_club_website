@@ -1,0 +1,110 @@
+{
+    "asset" : {
+        "generator" : "Khronos Blender glTF 2.0 I/O",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "L",
+            "rotation" : [
+                0.5000000596046448,
+                0.5000000596046448,
+                -0.5000000596046448,
+                0.5
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "name" : "Material.001",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.6795426607131958,
+                    0.049706485122442245,
+                    0.0027317553758621216,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "CUText",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1
+                    },
+                    "indices" : 2,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 42,
+            "max" : [
+                0.10086704790592194,
+                0,
+                0.24826589226722717
+            ],
+            "min" : [
+                -0.10086705535650253,
+                -0.10000000149011612,
+                -0.24826589226722717
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 42,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5123,
+            "count" : 60,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 504,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 504,
+            "byteOffset" : 504
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 120,
+            "byteOffset" : 1008
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 1128,
+            "uri" : "data:application/octet-stream;base64,Y5POvQAAAABqOX4+QGm9ugAAAABqOX6+Y5POvQAAAABqOX6+QGm9ugAAAABIzic+Y5POvQAAAABqOX4+YpPOPQAAAABIzic+QGm9ugAAAABIzic+YpPOPQAAAABqOX4+YpPOPQAAAABIzic+Y5POvc3MzL1qOX4+Y5POvc3MzL1qOX6+QGm9us3MzL1qOX6+QGm9us3MzL1Izic+Y5POvc3MzL1qOX4+QGm9us3MzL1Izic+YpPOPc3MzL1Izic+YpPOPc3MzL1Izic+YpPOPc3MzL1qOX4+Y5POvQAAAABqOX4+Y5POvc3MzL1qOX6+Y5POvc3MzL1qOX4+Y5POvQAAAABqOX6+Y5POvQAAAABqOX6+QGm9us3MzL1qOX6+Y5POvc3MzL1qOX6+QGm9ugAAAABqOX6+QGm9ugAAAABqOX6+QGm9us3MzL1Izic+QGm9us3MzL1qOX6+QGm9ugAAAABIzic+QGm9ugAAAABIzic+YpPOPc3MzL1Izic+QGm9us3MzL1Izic+YpPOPQAAAABIzic+YpPOPQAAAABqOX4+Y5POvc3MzL1qOX4+YpPOPc3MzL1qOX4+Y5POvQAAAABqOX4+YpPOPQAAAABIzic+YpPOPc3MzL1qOX4+YpPOPc3MzL1Izic+YpPOPQAAAABqOX4+AAAAgAAAgD8AAACAAAAAgAAAgD8AAACAAAAAgAAAgD8AAACAAAAAAAAAgD8AAACAAAAAgP//fz8AAACAAAAAgP//fz8AAACAAAAAgP//fz8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAgAAAgL8AAAAAAAAAgAAAgL8AAAAAAAAAgAAAgL8AAAAAAAAAgAAAgL8AAACAAAAAgP//f78AAACAAAAAgP//f78AAACAAAAAgP//f78AAACAAAAAgAAAgL8AAACAAAAAgAAAgL8AAACA//9/vwAAAAAAAACA//9/vwAAAAAAAACA//9/vwAAAAAAAACA//9/vwAAAAAAAACAAAAAAAAAAIAAAIC/AAAAAAAAAIAAAIC/AAAAAAAAAIAAAIC/AAAAAAAAAIAAAIC/AACAPwAAAIAAAACAAACAPwAAAIAAAACAAACAPwAAAIAAAACAAACAPwAAAIAAAACAAAAAAAAAAIAAAIC/AAAAAAAAAIAAAIC/AAAAAAAAAIAAAIC/AAAAAAAAAIAAAIC/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AACAPwAAAIAAAACAAACAPwAAAIAAAACAAACAPwAAAIAAAACAAACAPwAAAIAAAACAAAABAAIAAAADAAEABAAFAAYAAAAHAAgACQAKAAsACQALAAwADQAOAA8ACQAQABEAEgATABQAEgAVABMAFgAXABgAFgAZABcAGgAbABwAGgAdABsAHgAfACAAHgAhAB8AIgAjACQAIgAlACMAJgAnACgAJgApACcA"
+        }
+    ]
+}
