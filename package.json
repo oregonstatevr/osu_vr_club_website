@@ -19,7 +19,7 @@
     "aframe-animation-component": "^5.1.2",
     "aframe-animation-timeline-component": "^2.0.0",
     "babel-loader": "^8.0.6",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
